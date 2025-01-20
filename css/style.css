@@ -365,3 +365,24 @@ footer p a:hover{
         height: 250px;
     }
 } */
+
+@media screen and (max-width: 1024px){
+    header nav ul {
+        display: none;
+    }
+    #presentation{
+        padding: 0;
+    }
+    #presentation div {
+        grid-template-columns: 1fr;
+    }
+    #presentation img{
+        width: auto;
+        padding: 50px 0;
+        margin: auto;
+    }
+    #contact .container-1440{
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+}
