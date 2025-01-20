@@ -1,0 +1,367 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GENERAL */
+*{
+    margin: 0;
+}
+
+:root{
+    --open:"Open Sans", serif;
+    --kanit:"Kanit", serif;
+    --orange:#F17124;
+    --black:#000;
+    --white:#fff;
+    --background:#EFEFEF;
+    --grey:#C9C9C9;
+
+}
+
+.container-1440{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.btn{
+    text-decoration: none;
+    font-family: var(--kanit);
+    font-weight: 400;
+    font-size: 21px;
+    align-items: center;
+    background-color: transparent;
+    padding: 8px 25px;
+    display: inline-block;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transition: all 0.2s ease;
+    scale:1.1;
+}
+
+/* HEADER */
+
+header img{
+    width: 100%;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 130px auto;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    padding-left: 0;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: var(--open);
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+header nav ul li a:hover{
+    color: var(--orange);
+    transition: all 0.3s ease;
+}
+
+/* MAIN */
+
+/* PRESENTATION */
+
+#presentation{
+    background-color: var(--background);
+    padding: 225px 0;
+}
+
+#presentation article{
+    padding-top: 90px;
+    padding-left: 20px;
+}
+#presentation img{
+    width: 600px;
+    object-fit: cover;
+    padding: 0 0 30px 30px;
+}
+
+#presentation h2{
+    font-family: var(--kanit);
+    font-weight: 600;
+    font-size: 53px;
+    color: var(--orange);
+}
+
+#presentation span{
+    font-size: 30px;
+}
+
+#presentation p{
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--black);
+    padding-bottom: 30px;
+}
+
+#presentation a{
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+#presentation div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/* LOGO */
+
+#logo{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+}
+
+#logo img{
+    width: 348px;
+    padding: 115px 0;
+}
+
+/* HISTOIRE */
+
+#histoire{
+    background-color: var(--orange);
+}
+
+#histoire div{
+    max-width: 1168px;
+    margin: auto;
+    padding: 100px 10px;
+}
+
+#histoire p{
+    color: var(--white);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+
+/* OBECTIF */
+    
+#objectif h2{
+    padding: 100px 0 60px 45px;
+    color: var(--orange);
+    font-family: var(--kanit);
+    font-weight: 400;
+    font-size: 31px;
+    text-transform: uppercase;
+}
+
+#objectif p{
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--black);
+    padding-bottom: 80px;
+    padding-left: 15px;
+}
+
+#objectif div{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+#art1{
+    background-image: url(../img/zeroun.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top left;
+}
+
+#art2{
+    background-image: url(../img/zerodeux.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top left;
+}
+
+#art3{
+    background-image: url(../img/zerotrois.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: scroll;
+    background-position: top left;
+}
+
+/* SECTION 4 */
+
+#section4{
+    background-image: url(../img/32a5cbd2fc47c7ea15a08f8382997376.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 120px 0;
+}
+
+#section4 div{    
+    display: grid;
+    grid-template-columns: 500px auto; 
+}
+
+#section4 p{
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--white);
+    padding-bottom: 40px;
+}
+
+#section4 a{
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+#section4 article{
+    padding: 10px;
+}
+
+
+/* CONTACT */
+
+#contact .container-1440{
+    display: grid;
+    grid-template-columns: 52% auto;
+    gap: 50px;
+    padding: 10px;
+    margin: 100px 0;
+}
+
+#contact article{
+    background-color: #343A40;
+    padding: 20px;
+}
+
+#contact h2{
+    color: var(--orange);
+    font-family: var(--kanit);
+    font-weight: 400;
+    font-size: 31px;
+    padding-bottom: 20px;
+}
+
+#contact h3{
+    color: var(--grey);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+#contact a{
+    text-decoration: none;
+    color: var(--orange);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#contact #p1{
+    color: var(--white);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+#contact form label,
+p{
+    color: var(--white);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+
+#contact form input{
+    color: var(--white);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#contact form textarea,
+input{
+    border: 1px solid var(--white);
+    padding:8px 20px;
+    border-radius: 20px;
+    background-color: #343A40;
+}
+
+#contact form div{
+    flex-direction: column;
+    display: flex;
+    padding: 15px 0;
+}
+
+#contact #submit1{
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+#contact #submit1:hover{
+    transition: all 0.2s ease;
+    scale:1.1;
+}
+
+#contact form div:nth-child(6){
+    display: block;
+    grid-column:1/2;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--background)
+}
+
+footer p{
+    color: var(--orange);
+    font-family: var(--open);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p a{
+    color: var(--orange);
+    text-decoration: none;
+}
+
+footer p a:hover{
+    color: var(--black);
+    transition: all 0.3s ease;
+}
+
+
+/* Responsive intermédiaire
+@media screen and (max-width:1440px){
+    #section4{
+        height: 250px;
+    }
+} */
